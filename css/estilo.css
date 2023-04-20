@@ -1,24 +1,44 @@
-@import url("./cabecaljo.css");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&display=swap');
+@import url("./cabecalho.css");
 @import url("./conteudo.css");
-@import url("/rodape.css");
+@import url("./rodape.css");
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-  } 
-  
-  html{
-      font-size: 62.8%;
-  }
-  
-    .tit-sec{
-      text-align: center;
-      margin: 2vh 0;
-      font-size: 3rem;
-  }
-  
-  
-  
-  
-  
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+} 
+
+html{
+    font-size: 62.8%;
+}
+
+.tit-sec{
+    text-align: center;
+    margin: 2vh 0;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Oswald',sans-serif;
+}
+
+/* BREAKPOINT 590px */
+
+@media(max-width:590px){
+    .cabecalho{
+        flex-direction: column  ;
+    }
+
+    .cabecalho nav{
+        flex-wrap: nowrap;
+        height: 10vh;
+    }
+
+    .cabecalho a {
+        padding: 3vh 0;
+        font-size: 2rem;
+    }
+
+}
+
+/* BREAKPOINT 590px */
+
