@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicios 1 - js</title>
+    <script src="./js/exercicio.js" defer></script>
+    <style>
+    .esconder{
+      display: none;
+    } 
+    </style>
+  </head>
+
+  <body>
+    <header></header>
+
+    <h2>Exercícios - JavaScript</h2>
+
+    <section>
+      <div>
+        <h3>Exercício 1</h3>
+        <p>Crie um botão que, quando clicado, muda a cor do background do body da página exercicio-1.html.</p>
+        <button value="click" id="cor">Mudar cor de fundo</button>
+      </div>
+      <div>
+        <h3>Exercício 2</h3>
+        <p>Crie um formulário com um campo de entrada de texto e um botão "Enviar". Quando o botão for clicado, o valor do campo de entrada deve ser adicionado como um novo item em uma lista na página.</p>
+        <form id="form">
+          <input type="text" id="texto" placeholder="Escreva o que quiser!">
+          <button type="button" onclick="adicionarTexto()">Enviar</button>
+        </form>
+        <ul id="listText"></ul>
+      </div>
+      <div>
+        <h3>Exercício 3</h3>
+        <p>Crie uma imagem com um botão que, quando clicado, troca a imagem por outra.</p>
+        <img id="imgs" src="./img/tranquilidade.jpg" alt="Imagem tranquilidade">
+        <button onclick="mudarImg()">Mudar estado de humor</button>
+      </div>
+      <div>
+        <h3>Exercício 4</h3>
+        <p>Crie um botão e um elemento qualquer html, quando o botão é clicado, exibe uma mensagem neste elemento html na página .</p>
+        <button onclick="exibirText()">Exibir texto</button>
+        <p id="exibe"></p>
+      </div>
+      <div>
+        <h3>Exercício 5</h3>
+        <p>Crie um botão que, quando clicado, oculta um elemento HTML.</p>
+        <button onclick="esconderText()">Esconder texto</button>
+        <p id="esconde">Me esconde, por favor!!! :(</p>
+      </div>
+    </section>
+
+    <footer></footer>
+  </body>
+</html>

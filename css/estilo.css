@@ -18,14 +18,15 @@ html{
     margin: 2vh 0;
     font-size: 3rem;
     font-weight: 700;
-    font-family: 'Oswald',sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 /* BREAKPOINT 590px */
 
-@media(max-width:590px){
+@media(max-width:600px){
+
     .cabecalho{
-        flex-direction: column  ;
+        flex-direction: column;
     }
 
     .cabecalho nav{
@@ -33,18 +34,14 @@ html{
         height: 10vh;
     }
 
-    .cabecalho a {
-        padding: 3vh 0;
+    .cabecalho a{
+        padding: 2vh 0;
         font-size: 2rem;
     }
-
 }
-
-/* BREAKPOINT 590px */
 
 table{
     border-collapse: collapse;
-    margin:5% auto;
 }
 
 th, td{
@@ -52,13 +49,15 @@ th, td{
     padding: 8px;
 }
 
-tr:nth-child(odd){
+tr:nth-child(even){
     background-color: #cccccc;
 }
 
 tr:hover{
     background-color: #191010b3;
 }
+
+/* Ex de mesclagem */
 
 td[colspan]{
     text-align: center;
