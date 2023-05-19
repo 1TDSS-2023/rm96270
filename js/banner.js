@@ -1,19 +1,19 @@
 
-// let tmp = "";
+let tmp = "";
 
 //ARROW FUNCTION
-// const mudaCor = ()=>{
+const mudaCor = ()=>{
     
-//     let r = Math.round(Math.random() *255);
-//     let g = Math.round(Math.random() *255);
-//     let b = Math.round(Math.random() *255);
+    let r = Math.round(Math.random() *255);
+    let g = Math.round(Math.random() *255);
+    let b = Math.round(Math.random() *255);
 
-//     const elCabecalho = document.querySelector(".cabecalho");
+    const elCabecalho = document.querySelector(".cabecalho");
 
-//     elCabecalho.style.backgroundColor = `rgb(${r},${g},${b})`;
+    elCabecalho.style.backgroundColor = `rgb(${r},${g},${b})`;
 
-//     tmp = setTimeout(mudaCor, 1000);
-// }
+    tmp = setTimeout(mudaCor, 1000);
+}
 
 // mudaCor();
 
@@ -23,19 +23,16 @@ function mudaBanner() {
     const img1 = document.querySelector(".banner-1 img");
     const img2 = document.querySelector(".banner-2 img");
     
-    let nr = Math.ceil(Math.random() *3);
-    img1.src = "./img/banner-lateral-"+nr+".png";
+    const img1_temp = img1.src;
+    const img2_temp = img2.src;
 
-    nr = Math.ceil(Math.random() *3);
-    img2.src = "./img/banner-lateral-"+nr+".png";
+    img1.src = img2_temp;
+    img2.src = img1_temp;
 
-    setTimeout( mudaBanner, 2000);
-
+    setTimeout( mudaBanner, 1000);
 }
 
 mudaBanner();
-
-
 
 function luz() {
     
@@ -52,6 +49,5 @@ function luz() {
         botaLigaDesliga.textContent = "LIGAR";
     }
 
-    
-
 }
+              
